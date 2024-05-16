@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analyst Dashboard </title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="assets/logo.jpg" alt="Pizza Logo" class="logo">
+            <h1>Data Analyst Dashboard 22's Pizza</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="data-section">
+            <div class="container">
+                <h2>Data Overview</h2>
+                <p>Disini data untuk grafik dan insight untuk pendapatan dan penjualan produk yang umum aja </p>
+                <div class="overview-container">
+                    
+                    <div class="small-containers">
+                        <div class="small-container" id="total-revenue-container" onclick="showChart('total-revenue-container', 'totalRevenue')">
+                            <h3>Total Revenue</h3>
+                            <p id="total-revenue"></p>
+                        </div>
+                        <div class="small-container" id="total-pizza-container" onclick="showChart('total-pizza-container', 'totalPizza')">
+                            <h3>Total Pizza</h3>
+                            <p id="total-pizza"></p>
+                        </div>
+                        <div class="small-container" id="total-sales-container" onclick="showChart('total-sales-container', 'totalSales')">
+                            <h3>Total Sales</h3>
+                            <p id="total-sales"></p>
+                        </div>
+                    </div>
+                    
+                    <div class="big-chart">
+                        <!-- Canvas untuk menampilkan chart -->
+                        <canvas id="Chart1"></canvas>
+
+                        <!-- Load JavaScript file -->
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    
+        
+
+        <section class="charts-section">
+            <h2>Detail Charts and Graphs</h2>
+            <p> Disini untuk chart chart details dari parameter kita</p>
+            <div class="chart-container">
+                <!-- Chart 1 -->
+                <div class="chart"></div>
+                <!-- Chart 2 -->
+                <div class="chart"></div>
+                <!-- Chart 3 -->
+                <div class="chart"></div>
+                <!-- Chart 4 -->
+                <div class="chart"></div>
+                <!-- Chart 5 -->
+                <div class="chart"></div>
+                <!-- Chart 6 -->
+                <div class="chart"></div>
+                <!-- Chart 7 -->
+                <div class="chart"></div>
+                <!-- Chart 8 -->
+                <div class="chart"></div>
+            </div>
+        </section>
+    </div>
+    <section class="business-section">
+        <div class="container">
+            <div class="problem-solution">
+                <div class="problem">
+                    <h2>Business Problem</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Vivamus in nisi a libero commodo pharetra. Donec eget bibendum lectus. Fusce sodales turpis vitae est varius, vitae ullamcorper nisi venenatis.</p>
+                    <a href="#" class="more-details">More Details</a>
+                </div>
+                <div class="solution">
+                    <h2>Business Solution</h2>
+                    <p>Aliquam ac condimentum neque. Vestibulum aliquet scelerisque mi nec consequat. Etiam ac justo et sem vehicula sollicitudin. Nulla in justo nec lorem dictum faucibus.</p>
+                    <a href="#" class="more-details">More Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="about-team">
+    <div class="container">
+        <h2>Meet Our Mentor</h2>
+        <div class="mentor-container">
+            <!-- Mentor 1 -->
+            <div class="team-member">
+                <img src="assets/fotomentor/gardi.jpg" alt="Mentor 1" class="team-image">
+                <p>Muhammad Gardian Novandri</p>
+                <p>Mentor Data Analytics</p>
+                <a href="https://www.linkedin.com/in/mgnovandri/" class="linkedin">Linkedin</a>
+            </div>
+            <!-- Mentor 2 -->
+            <div class="team-member">
+                <img src="assets/fotomentor/bintang.png" alt="Mentor 2" class="team-image">
+                <p>Bintang Chandra Ayu Srikandi</p>
+                <p>Mentor Software Engineering</p>
+                <a href="https://www.https://www.linkedin.com/in/bintangsrikandi/?originalSubdomain=id" class="linkedin">Linkedin</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-team">
+    <div class="container">
+        <h2>Meet Our Team</h2>
+        <div class="team-container">
+            <!-- Anggota tim 1 -->
+            <div class="team-member">
+                <img src="assets/fotomember/sendi.jpg" alt="Team Member 1" class="team-image">
+                <p>Sendi Satria Pangestu</p>
+                <p>Universitas Islam Riau</p>
+                <p>Program Studi Teknik Informatika</p>
+                <a href="https://www.linkedin.com/in/sendi-satria-pangestu-2499472a4/" class="linkedin">Linkedin</a>
+            </div>
+            <!-- Anggota tim 2 -->
+            <div class="team-member">
+                <img src="assets/fotomember/Dinda.jpg" alt="Team Member 2" class="team-image">
+                <p>Dinda Ayudia Larasati</p>
+                <p>Universitas Indonesia</p>
+                <p>Program Studi Psikologi</p>
+                <a href="https://www.linkedin.com/in/dinda-ayudia-larasati" class="linkedin">Linkedin</a>
+            </div>
+            <!-- Anggota tim 3 -->
+            <div class="team-member">
+                <img src="assets/fotomember/zafira.jpg" alt="Team Member 3" class="team-image">
+                <p>Zafira Julia Lisda</p>
+                <p>Universitas Diponegoro</p>
+                <p>Program Studi Statistika</p>
+                <a href="https://www.linkedin.com/in/zafirajulialisda?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="linkedin">Linkedin</a>
+            </div>
+            <!-- Anggota tim 4 -->
+            <div class="team-member">
+                <img src="assets/fotomember/fadwa.jpeg" alt="Team Member 4" class="team-image">
+                <p>Afifah Fadwa</p>
+                <p>Universitas Brawijaya</p>
+                <p>Program Studi Sosiologi</p>
+                <a href="https://www.linkedin.com/in/afifah-fadwa-6051b1263/" class="linkedin">Linkedin</a>
+            </div>
+            <!-- Anggota tim 5 -->
+            <div class="team-member">
+                <img src="assets/fotomember/ihsan.jpg" alt="Team Member 5" class="team-image">
+                <p>Muhammad Ihsan Taqiyuddin</p>
+                <p>IPB University</p>
+                <p>Program Studi Teknik Industri Pertanian</p>
+                <a href="http://www.linkedin.com/in/muhammad-ihsan-taqiyuddin" class="linkedin">Linkedin</a>
+            </div>
+            <!-- Anggota tim 6 -->
+            <div class="team-member">
+                <img src="assets/fotomember/zhafran.jpg" alt="Team Member 6" class="team-image">
+                <p>Zhafran Alfani Suhada</p>
+                <p>Universitas Terbuka</p>
+                <p> Program Studi Sosiologi</p>
+                <a href="https://www.linkedin.com/in/zhafran-alfani-suhada" class="linkedin">Linkedin</a>
+
+            </div>
+            <!-- Anggota tim 7 -->
+            <div class="team-member">
+                <img src="assets/fotomember/isna.jpg" alt="Team Member 7" class="team-image">
+                <p>Isna Shofa Fahradina</p>
+                <p>Universitas Muhammadiyah Semarang</p>
+                <p> Program Studi Manajemen</p>
+                <a href="https://http://www.linkedin.com/in/isna-shofa-fahradina-20622b222" class="linkedin">Linkedin</a>
+            </div>
+            <!-- Anggota tim 8 -->
+            <div class="team-member">
+                <img src="assets/fotomember/wahyu.jpg" alt="Team Member 8" class="team-image">
+                <p>Wahyu Hariyadi Nurdin</p>
+                <p>Universitas Gunadarma</p>
+                <p>Program Studi Sistem Informasi</p>
+                <a href="http://https://www.linkedin.com/in/wahyu-hariyadi-nurdin-60a8ab26a" class="linkedin">Linkedin</a>
+            </div>
+            <!-- Anggota tim 9 -->
+            <div class="team-member">
+                <img src="assets/fotomember/lia.jpg" alt="Team Member 9" class="team-image">
+                <p>Cornelia Luba Tara Boro</p>
+                <p>Institut Teknologi Nasional Malang</p>
+                <p>Program Studi Teknik Informatika</p>
+                <a href="http://www.linkedin.com/in/corneliaboro" class="linkedin">Linkedin</a>
+            </div>
+            <!-- Anggota tim 10 -->
+            <div class="team-member">
+                <img src="assets/fotomember/deis.jpg" alt="Team Member 10" class="team-image">
+                <p>Deis Zadiaqe</p>
+                <p>Institut Teknologi PLN</p>
+                <p>Program Studi Teknik Informatika</p>
+                <a href="http://linkedin.com/in/deis-zadiaqe-94b3512a2" class="linkedin">Linkedin</a>
+            </div>
+            <!-- Anggota tim 11 -->
+            <div class="team-member">
+                <img src="assets/fotomember/lucky.jpg" alt="Team Member 11" class="team-image">
+                <p>Lucky Andrian Maulana</p>
+                <p>Universitas 17 Agustus 1945 Surabaya</p>
+                <p>Program Studi Manajemen</p>
+                <a href="https://www.linkedin.com/in/lucky-andrian-maulana-170113286" class="linkedin">Linkedin</a>
+            </div>
+            <!-- Anggota tim 12 -->
+            <div class="team-member">
+                <img src="assets/fotomember/mega.jpg" alt="Team Member 12" class="team-image">
+                <p>Widya Mega Wulandari</p>
+                <p>Universitas Jember</p>
+                <p>Program Studi Matematika</p>
+                <a href="https://www.linkedin.com/in/widya-mega-wulandari-7901932b2/" class="linkedin">Linkedin</a>
+            </div>
+        </div>
+        <p class="team-description">Meet the amazing team behind this Data Analyst Dashboard! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Vivamus in nisi a libero commodo pharetra.</p>
+    </div>
+</section>
+
+    
+    
+
+    <footer>
+        <div class="container">
+            <p>Copyright &copy; RevoU Tech Academy Section Surabaya Team 22</p>
+        </div>
+    </footer>
+</body>
+</html>
