@@ -21,34 +21,36 @@
         <section class="data-section">
             <div class="container">
                 <h2>Data Overview</h2>
-                <p>Disini data untuk grafik dan insight untuk pendapatan dan penjualan produk yang umum aja </p>
+                <p>Berikut adalah Data Umum Untuk 22's Pizza yang mana terdiri dari Revenue Penjualan, Total Pizza Terjual, dan Total Order Perbulan </p>
                 <div class="overview-container">
-                    
                     <div class="small-containers">
-                        <div class="small-container" id="total-revenue-container" onclick="showChart('total-revenue-container', 'totalRevenue')">
-                            <h3>Total Revenue</h3>
-                            <p id="total-revenue"></p>
+                        <div class="container-row">
+                            <img src="assets/icon/Dollar.png" alt="Dollar" class="icon">
+                            <div class="small-container" id="total-revenue-container" onclick="showChart('revenueData')">
+                                <h3>Total Revenue</h3>
+                                <p id="totalRevenue"></p>
+                            </div>
                         </div>
-                        <div class="small-container" id="total-pizza-container" onclick="showChart('total-pizza-container', 'totalPizza')">
-                            <h3>Total Pizza</h3>
-                            <p id="total-pizza"></p>
+                        <div class="container-row">
+                            <img src="assets/icon/pizza.png" alt="pizza" class="icon">
+                            <div class="small-container" id="total-pizza-container" onclick="showChart('salesData')">
+                                <h3>Total Of Order</h3>
+                                <p id="totalSales"></p>
+                            </div>
                         </div>
-                        <div class="small-container" id="total-sales-container" onclick="showChart('total-sales-container', 'totalSales')">
-                            <h3>Total Sales</h3>
-                            <p id="total-sales"></p>
+                        <div class="container-row">
+                            <img src="assets/icon/shop.png" alt="shop" class="icon">
+                            <div class="small-container" id="total-sales-container" onclick="showChart('orderData')">
+                                <h3>Total Of Sales</h3>
+                                <p id="totalOrder"></p>
+                            </div>
                         </div>
                     </div>
                     
                     <div class="big-chart">
-                        <!-- Canvas untuk menampilkan chart -->
                         <canvas id="Chart1"></canvas>
-
-                        <!-- Load JavaScript file -->
-                        
                     </div>
-                    
                 </div>
-            </div>
         </section>
     </div>
     
@@ -60,7 +62,10 @@
             <p> Disini untuk chart chart details dari parameter kita</p>
             <div class="chart-container">
                 <!-- Chart 1 -->
-                <div class="chart"></div>
+                <div class="chart">
+                    <canvas id="Chart2"></canvas>
+                </div>
+                
                 <!-- Chart 2 -->
                 <div class="chart"></div>
                 <!-- Chart 3 -->

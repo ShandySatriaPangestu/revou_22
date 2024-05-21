@@ -29,16 +29,17 @@ header {
 }
 
 header .logo {
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     margin-right: 10px;
 }
 
 header h1 {
-    margin: -100px 0 0; /* Menggeser teks ke atas */
+    margin: -50px 0 0; /* Menggeser teks ke atas */
     display: inline-block;
     vertical-align: middle;
+    font-size: 25px;
     
 }
 
@@ -85,6 +86,7 @@ header h1 {
     display: flex; /* Menggunakan flexbox */
     flex-direction: column; /* Menyusun kontainer kecil secara vertikal */
     gap: 32px; /* Jarak antara kontainer kecil */
+    align-items: center; /* Pusatkan item secara horizontal */
 }
 
 .small-container {
@@ -93,7 +95,27 @@ header h1 {
     background-color: #F00095;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex; /* Menggunakan flexbox */
+    flex-direction: column; /* Menyusun item secara vertikal */
+    justify-content: center; /* Pusatkan item secara vertikal */
+    align-items: center; /* Pusatkan item secara horizontal */
+    text-align: center; /* Menyelaraskan teks ke tengah */
+    
 }
+
+.container-row {
+    display: flex; /* Menyusun item dalam satu baris */
+    align-items: center; /* Pusatkan item secara vertikal dalam baris */
+    gap: 16px; /* Jarak antara ikon dan kontainer */
+}
+
+.icon {
+    width: 50px; /* Lebar gambar */
+    height: 50px; /* Tinggi gambar */
+    object-fit: contain; /* Menjaga proporsi gambar */
+    border-radius: 10px; /* Membulatkan sudut gambar agar sesuai dengan kontainer */
+}
+
 
 
 .chart-container {
@@ -210,7 +232,6 @@ footer {
     text-align: center;
     padding: 2px 5px; 
     width: 100%;
-    position: fixed;
     bottom: 0;
 }
 
