@@ -21,7 +21,7 @@
         <section class="data-section">
             <div class="container">
                 <h2>Data Overview</h2>
-                <p>Berikut adalah Data Umum Untuk 22's Pizza yang mana terdiri dari Revenue Penjualan, Total Pizza Terjual, dan Total Order Perbulan </p>
+                <p>Berikut adalah Data Umum Untuk 22's Pizza yang mana terdiri dari Revenue Penjualan, Total Pizza Terjual, dan Total Order Perbulan Serta Chart Details dari Nama Pizza, Category Pizza, dan Size Pizza </p>
                 <div class="overview-container">
                     <div class="small-containers">
                         <div class="container-row">
@@ -50,38 +50,54 @@
                     <div class="big-chart">
                         <canvas id="Chart1"></canvas>
                     </div>
+                    
                 </div>
+                
+                <div class="small-chart-container">
+                    <div class="filters">
+                        <h2>Filter Bulan</h2>
+                        <input type="checkbox" id="january" name="month" value="01">
+                        <label for="january">January</label><br>
+                        <input type="checkbox" id="february" name="month" value="02">
+                        <label for="february">February</label><br>
+                        <input type="checkbox" id="march" name="month" value="03">
+                        <label for="march">March</label><br>
+                        <input type="checkbox" id="april" name="month" value="04">
+                        <label for="april">April</label><br>
+                        <input type="checkbox" id="mei" name="month" value="05">
+                        <label for="mei">Mei</label><br>
+                        <input type="checkbox" id="june" name="month" value="06">
+                        <label for="june">June</label><br>
+                        <input type="checkbox" id="july" name="month" value="07">
+                        <label for="july">July</label><br>
+                        <input type="checkbox" id="agust" name="month" value="08">
+                        <label for="agust">Agust</label><br>
+                        <input type="checkbox" id="september" name="month" value="09">
+                        <label for="september">September</label><br>
+                        <input type="checkbox" id="october" name="month" value="10">
+                        <label for="october">October</label><br>
+                        <input type="checkbox" id="november" name="month" value="11">
+                        <label for="november">November</label><br>
+                        <input type="checkbox" id="december" name="month" value="12">
+                        <label for="december">December</label><br>
+                        <button onclick="applyFilters()">Apply Filters</button>
+                    </div>
+                    <!-- Chart untuk Pizza Name -->
+                    <div class="small-chart" id="small-chart-pizza-name">
+                      <canvas id="chartpizzaname"></canvas>
+                    </div>
+                    <!-- Chart untuk Category -->
+                    <div class="small-chart" id="small-chart-category">
+                      <canvas id="chartcategory"></canvas>
+                    
+                    <!-- Chart untuk Size -->
+                    <div class="small-chart" id="small-chart-size">
+                      <canvas id="chartsize"></canvas>
+                    
+                  </div>
         </section>
     </div>
     
-    
-        
-
-        <section class="charts-section">
-            <h2>Detail Charts and Graphs</h2>
-            <p> Disini untuk chart chart details dari parameter kita</p>
-            <div class="chart-container">
-                <!-- Chart 1 -->
-                <div class="chart">
-                    <canvas id="Chart2"></canvas>
-                </div>
-                
-                <!-- Chart 2 -->
-                <div class="chart"></div>
-                <!-- Chart 3 -->
-                <div class="chart"></div>
-                <!-- Chart 4 -->
-                <div class="chart"></div>
-                <!-- Chart 5 -->
-                <div class="chart"></div>
-                <!-- Chart 6 -->
-                <div class="chart"></div>
-                <!-- Chart 7 -->
-                <div class="chart"></div>
-                <!-- Chart 8 -->
-                <div class="chart"></div>
-            </div>
-        </section>
     </div>
     <section class="business-section">
         <div class="container">
